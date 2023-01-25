@@ -1,0 +1,255 @@
+/* Estrutura do Site */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #FFF;
+    background: url(../img/fundo.png) repeat-x;
+}
+
+.container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.topo{
+    height: 150px;
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(../img/logo.png) no-repeat center;
+    text-indent: -3000px; /* Para "esconder" o texto sem afetar leitores de tela */
+}
+
+/* Barra de Navegação */
+
+a:link, a:visited{
+    color: #B10333;
+    padding: 2px;
+}
+
+a:hover{
+    color: #E50040;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topo ul{
+    margin-top: 30px;
+    background-color: #B10333;
+    float: left;
+}
+
+.topo ul li{
+    float: left;
+}
+
+.topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #FFF;
+    background: url('../img/divisor.png') no-repeat left center;
+}
+
+.topo ul .primeiro a{
+    background: none;
+}
+
+.topo ul a:hover{
+    color: #69001D;
+}
+
+body.home .navegacao a.pag-principal,
+body.brasil .navegacao a.pag-brasil,
+body.internacional .navegacao a.pag-internacional,
+body.economia .navegacao a.pag-economia,
+body.saude .navegacao a.pag-saude,
+body.ciencia .navegacao a.pag-ciencia,
+body.fotos .navegacao a.pag-fotos{
+    color: #FFF;
+    background-color: #DE003E;
+    cursor: text;
+}
+
+/* Layout de Três Colunas */
+
+.conteudo{
+    margin-top: 60px;
+    background-color: #F5F5F5;
+}
+
+.lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+.primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+.duas-colunas .primario{
+    width: 555px;
+}
+
+.uma-coluna .primario{
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+.secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/* Caixa */
+
+.caixa{
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #F3F3F3;
+    background: url('../img/fundo-caixa.png');
+}
+
+h2{
+    font-size: 1em;
+    background-color: #294C71;
+    color: #FFF;
+    padding: 5px;
+}
+
+.caixa-conteudo{
+    background-color: #FFF;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Menus Laterais */
+
+.lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.lateral ul a:hover{
+    background-color: #F9F9F9;
+    padding-left: 20px;
+    background: url('../img/marcador.png') no-repeat left center;
+}
+
+/* Formulários */
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #FFF;
+}
+
+input.submit{
+    width: 80px;
+    color: #FFF;
+    background-color: #B10333;
+    border: 2px solid #870529;
+}
+
+/* Imagens */
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #DFDFDF;
+}
+
+/* Cabeçalhos */
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background-color: #B10333;
+    color: #FFF;
+}
+
+.entrevista h3{
+    background-color: #DE003E;
+}
+
+/* Lista de Notícias */
+
+.lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #CCC;
+    height: 62px;
+}
+
+.lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+.lista-noticias li a{
+    text-decoration: none;
+}
+
+.lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3E7AB9;
+}
+
+.lista-noticias li a p{
+    font-size: 0.7em;
+    color: #000;
+}
+
+.lista-noticias li:hover{
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+.container-rodape{
+    clear: both;
+    background-color: #294C71;
+    padding: 20px;
+}
+
+.rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+}
